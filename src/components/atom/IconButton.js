@@ -4,6 +4,7 @@ import Image from "next/image";
 const Container = styled("div")({
   display: "flex",
   alignItems: "center",
+  cursor: "pointer",
 });
 
 export const IconButton = ({
@@ -18,7 +19,9 @@ export const IconButton = ({
       <Avatar sx={{ backgroundColor: backgroundColor }}>
         <Image src={src} alt={alt} />
       </Avatar>
-      <Typography sx={{ ml: 1 }}> {text}</Typography>
+      <Typography className="font-inter" sx={{ ml: 1 }}>
+        {text}
+      </Typography>
     </Container>
   );
 };

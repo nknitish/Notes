@@ -1,11 +1,11 @@
-import styled from "@emotion/styled";
+import { styled } from "@mui/system";
 
-export const Box = styled("div")({
-  padding: "0 84px",
-});
-
-export const ButtonContainer = styled("div")({
+export const ButtonContainer = styled("div")(({ theme }) => ({
   display: "flex",
-  justifyContent: "space-around",
+  gap: "10%",
   marginTop: "80px",
-});
+
+  [theme.breakpoints.down("sm")]: {
+    gap: "10%",
+  },
+}));

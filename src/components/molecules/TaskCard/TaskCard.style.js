@@ -2,14 +2,14 @@ import { styled } from "@mui/system";
 import { Card as MuiCard } from "@mui/material";
 
 export const Card = styled(MuiCard)({
-  marginTop: "20px",
+  marginTop: "25px",
   height: "54px",
   display: "flex",
   alignItems: "center",
   borderRadius: "9px",
   background: "white",
   boxShadow: "0px 2px 2px 0px rgba(0, 0, 0, 0.25)",
-  padding: "0 50px",
+  padding: "0 5%",
 });
 
 export const Left = styled("div")({
@@ -19,14 +19,23 @@ export const Left = styled("div")({
     marginRight: "3px",
   },
 });
-export const Right = styled("div")({
+
+export const Right = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
 
   button: {
-    marginLeft: "24px",
+    marginRight: "10px",
   },
+
   "& .MuiAvatar-root": {
-    marginLeft: "29px",
+    marginLeft: "20px",
+    cursor: "pointer",
   },
-});
+
+  [theme.breakpoints.down("sm")]: {
+    "& .MuiAvatar-root": {
+      marginLeft: "0px",
+    },
+  },
+}));

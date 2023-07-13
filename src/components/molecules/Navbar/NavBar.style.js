@@ -6,23 +6,40 @@ export const MyComponent = styled("div")({
   height: "20vh",
   display: "flex",
   alignItems: "center",
-  padding: "0 40px",
+  padding: "0 10%",
   borderRadius: "27px 27px 0 0",
 });
 
 export const LogoContainer = styled("div")({
   flex: "1",
+  img: {
+    cursor: "pointer",
+  },
 });
 
-export const ProfileContainer = styled("div")({
+export const ProfileContainer = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
+
   img: {
-    marginRight: "35px",
+    cursor: "pointer",
   },
+
+  ".avatar": {
+    marginLeft: "20px",
+    marginRight: "2px",
+  },
+
   "& .MuiTypography-root ": {
     marginLeft: "3px",
     fontSize: "16px",
     color: "white",
   },
-});
+
+  [theme.breakpoints.up("lg")]: {
+    ".avatar": {
+      marginLeft: "60px",
+      marginRight: "5px",
+    },
+  },
+}));

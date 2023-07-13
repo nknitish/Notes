@@ -1,5 +1,5 @@
 import { TextareaAutosize } from "@mui/base";
-import styled from "@emotion/styled";
+import { styled } from "@mui/system";
 
 export const TextArea = styled((props) => (
   <TextareaAutosize

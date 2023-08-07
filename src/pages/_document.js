@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Win - Notes</title>
+        <title>Notes</title>
       </Head>
       <body>
         <Main />

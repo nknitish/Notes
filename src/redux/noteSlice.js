@@ -4,27 +4,15 @@ const initialState = {
   allNotes: [
     {
       id: "1",
-      title: "Next Js 1",
+      title: "Next Js",
       description:
         "There are many great courses available for learning Next.js, here in the Best Next JS courses we will recommend a few courses that are particularly well suited for beginners and intermediate & advanced learners who are looking to learn Next.js. We will see a list of tutorials from udemy, educative.io, Pluralsight, etc. Also, we will keep and",
     },
     {
       id: "2",
-      title: "Next Js 2",
+      title: "Health",
       description:
-        "There are many great courses available for learning Next.js, here in the Best Next JS courses we will recommend a few courses that are particularly well suited for beginners and intermediate & advanced learners who are looking to learn Next.js. We will see a list of tutorials from udemy, educative.io, Pluralsight, etc. Also, we will keep and",
-    },
-    {
-      id: "3",
-      title: "Next Js 3",
-      description:
-        "There are many great courses available for learning Next.js, here in the Best Next JS courses we will recommend a few courses that are particularly well suited for beginners and intermediate & advanced learners who are looking to learn Next.js. We will see a list of tutorials from udemy, educative.io, Pluralsight, etc. Also, we will keep and",
-    },
-    {
-      id: "4",
-      title: "Next Js 4",
-      description:
-        "There are many great courses available for learning Next.js, here in the Best Next JS courses we will recommend a few courses that are particularly well suited for beginners and intermediate & advanced learners who are looking to learn Next.js. We will see a list of tutorials from udemy, educative.io, Pluralsight, etc. Also, we will keep and",
+        "According to WHO, “Health is a complete state of physical, mental, social well-being of an individual and not merely the absence of disease or infirmity",
     },
   ],
 };

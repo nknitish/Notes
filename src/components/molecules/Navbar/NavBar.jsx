@@ -3,7 +3,7 @@ import { LogoContainer, MyComponent, ProfileContainer } from "./NavBar.style";
 import Image from "next/image";
 
 //Images
-import Logo from "@/Assets/Images/Logo.svg";
+import Logo from "@/Assets/Images/Logo.png";
 import Add from "@/Assets/Images/add.png";
 import { Avatar, Typography } from "@mui/material";
 import { useRouter } from "next/router";
